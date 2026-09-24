@@ -1,0 +1,258 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHIONISTA - Fashion Baju</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">FASHIONISTA</div>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#fitur">Fitur</a></li>
+                <li><a href="#koleksi">Koleksi</a></li>
+                <li><a href="#tujuan">Tujuan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Beranda -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <span class="badge">✨ Fashion Modern</span>
+            <h1>Tampil Stylish,<br><span>Lebih Percaya Diri</span></h1>
+
+            <p>
+                Temukan berbagai pilihan fashion baju modern,
+                nyaman, dan sesuai dengan gaya kamu.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#koleksi" class="btn primary">Lihat Koleksi</a>
+                <a href="#tujuan" class="btn secondary">Tentang Kami</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="fashion-card">
+                👗
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitur -->
+    <section id="fitur" class="section">
+        <div class="section-title">
+            <span>FITUR</span>
+            <h2>Fitur Unggulan</h2>
+            <p>Berbagai fitur untuk membuat pengalaman fashion lebih mudah.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="icon">👕</div>
+                <h3>Koleksi Fashion</h3>
+                <p>
+                    Pilihan baju dengan berbagai model, ukuran,
+                    dan gaya untuk kebutuhan sehari-hari.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🔎</div>
+                <h3>Pencarian Produk</h3>
+                <p>
+                    Cari produk fashion dengan mudah berdasarkan
+                    nama atau kategori.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🛒</div>
+                <h3>Keranjang Belanja</h3>
+                <p>
+                    Tambahkan produk favorit ke keranjang
+                    sebelum melakukan pembelian.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">❤️</div>
+                <h3>Favorit</h3>
+                <p>
+                    Simpan produk yang kamu sukai agar
+                    mudah ditemukan kembali.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Koleksi -->
+    <section id="koleksi" class="section collection-section">
+        <div class="section-title">
+            <span>KOLEKSI</span>
+            <h2>Koleksi Fashion Terbaru</h2>
+            <p>Pilih pakaian yang sesuai dengan gaya kamu.</p>
+        </div>
+
+        <div class="filter">
+            <button class="filter-btn active" data-category="all">Semua</button>
+            <button class="filter-btn" data-category="wanita">Wanita</button>
+            <button class="filter-btn" data-category="pria">Pria</button>
+            <button class="filter-btn" data-category="casual">Casual</button>
+        </div>
+
+        <div class="products" id="productList">
+
+            <div class="product-card" data-category="wanita">
+                <div class="product-image pink">👚</div>
+                <div class="product-info">
+                    <small>WANITA</small>
+                    <h3>Blouse Elegan</h3>
+                    <p class="price">Rp149.000</p>
+                    <button class="cart-btn"
+                        data-name="Blouse Elegan"
+                        data-price="149000">
+                        + Keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pria">
+                <div class="product-image blue">👔</div>
+                <div class="product-info">
+                    <small>PRIA</small>
+                    <h3>Kemeja Casual</h3>
+                    <p class="price">Rp179.000</p>
+                    <button class="cart-btn"
+                        data-name="Kemeja Casual"
+                        data-price="179000">
+                        + Keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="casual">
+                <div class="product-image beige">👕</div>
+                <div class="product-info">
+                    <small>CASUAL</small>
+                    <h3>Kaos Oversize</h3>
+                    <p class="price">Rp99.000</p>
+                    <button class="cart-btn"
+                        data-name="Kaos Oversize"
+                        data-price="99000">
+                        + Keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="wanita">
+                <div class="product-image purple">👗</div>
+                <div class="product-info">
+                    <small>WANITA</small>
+                    <h3>Dress Modern</h3>
+                    <p class="price">Rp229.000</p>
+                    <button class="cart-btn"
+                        data-name="Dress Modern"
+                        data-price="229000">
+                        + Keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pria">
+                <div class="product-image green">🧥</div>
+                <div class="product-info">
+                    <small>PRIA</small>
+                    <h3>Jaket Streetwear</h3>
+                    <p class="price">Rp259.000</p>
+                    <button class="cart-btn"
+                        data-name="Jaket Streetwear"
+                        data-price="259000">
+                        + Keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="casual">
+                <div class="product-image orange">👚</div>
+                <div class="product-info">
+                    <small>CASUAL</small>
+                    <h3>Hoodie Premium</h3>
+                    <p class="price">Rp199.000</p>
+                    <button class="cart-btn"
+                        data-name="Hoodie Premium"
+                        data-price="199000">
+                        + Keranjang
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tujuan -->
+    <section id="tujuan" class="purpose">
+        <div class="purpose-content">
+            <span>TUJUAN KAMI</span>
+            <h2>Membantu Kamu Menemukan Gaya Terbaik</h2>
+
+            <p>
+                Fashionista dibuat untuk memberikan pengalaman
+                berbelanja fashion yang sederhana, modern, dan
+                menyenangkan.
+            </p>
+
+            <div class="purpose-list">
+                <div>✓ Menyediakan fashion berkualitas</div>
+                <div>✓ Menghadirkan berbagai gaya modern</div>
+                <div>✓ Membantu menemukan pakaian sesuai kebutuhan</div>
+                <div>✓ Memberikan pengalaman belanja yang mudah</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keranjang -->
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h2>🛒 Keranjang</h2>
+            <button id="closeCart">×</button>
+        </div>
+
+        <div id="cartItems">
+            <p class="empty-cart">Keranjang masih kosong.</p>
+        </div>
+
+        <div class="cart-footer">
+            <strong>Total: <span id="cartTotal">Rp0</span></strong>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Tombol Keranjang -->
+    <button class="floating-cart" id="openCart">
+        🛒 <span id="cartCount">0</span>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <h3>FASHIONISTA</h3>
+        <p>Fashion modern untuk gaya hidup masa kini.</p>
+        <p>© 2026 Fashionista. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
